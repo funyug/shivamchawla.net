@@ -7,3 +7,162 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+  background: linear-gradient(#1C242D, #222B34);
+  color: white;
+}
+.slider-img-big {
+  height:400px;
+  width:100%;
+}
+.slider-img-small {
+  height:200px;
+  width:100%;
+}
+
+.container-outer {
+  padding:50px;
+  padding-bottom: 0px;
+}
+
+.center {
+  margin:auto;
+  text-align: center;
+}
+
+.site-name {
+  font-size:32px;
+  color:white;
+}
+
+.featured-posts .post-title {
+  margin: 0px;
+  margin-top: -33px;
+  font-size: 20px;
+  color: white;
+  background: black;
+  opacity: 0.5;
+}
+.slider-div {
+  padding: 0px;
+}
+
+.navbar-inner li{
+  line-height: 40px;
+  letter-spacing:2px;
+  display: inline;
+  padding: 0px 10px;
+}
+
+.nav-link{
+  transition: border-top .3s;
+}
+.navbar-ul {
+  margin:0;
+}
+.navbar-inner a {
+  color:white;
+}
+.brand{
+  letter-spacing:4px;
+  transition: border-top .3s;
+  display: inline;
+}
+
+.header{
+  background: linear-gradient(#1C242D, #222B34);
+  font-size: 20px;
+  color: white;
+  border-bottom:2px solid dodgerblue !important;
+  line-height: 40px !important;
+  box-shadow: 0 12px 6px -6px rgba(0,0,0, .2) !important;
+}
+.featured-posts {
+  margin-top:15px;
+}
+.section {
+  padding-top: 40px ;
+  text-align: left;
+}
+.post-image {
+  padding:0px;
+}
+.post-image img {
+  width:180px;
+  height:180px;
+}
+.post {
+  padding:10px;
+  height:220px;
+}
+.footer {
+  margin-top: 40px;
+}
+
+.article-image {
+  padding:0px;
+  padding-bottom: 20px;
+}
+.article-image img {
+  width:100%;
+  height:350px;
+}
+.article-content {
+  font-size:18px;
+}
+.share-buttons {
+  padding-top:30px;
+}
+.comments {
+  padding-top:30px;
+}
+.avatar-image {
+  padding: 0px;
+}
+
+.avatar-image img {
+  width:80px;
+  height:80px;
+}
+.comments-div {
+  text-align: left;
+  padding:10px;
+  background-color: #242F39;
+}
+.single-comment div {
+  padding: 10px 0px;
+}
+.write-comment textarea {
+  height: 80px;
+  width: 100%;
+  background: black;
+  color: white;
+}
+.input-field {
+  padding:0;
+}
+.btn-post-comment {
+  margin-top:5px;
+}
+.section .post-title {
+  margin:0;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.section .post-excerpt {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.divider-line {
+  width: 33%;
+  border-top: 2px solid dodgerblue;
+}
+a {
+  color:white;
+}
+.more-button {
+  text-align: center;
+}
