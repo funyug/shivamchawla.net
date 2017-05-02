@@ -5,20 +5,20 @@
         @if(count($featured_posts) == 3)
         <div class="featured-posts clearfix">
             <div class="col-md-6 slider-div">
-                <a href="/posts/{{$featured_posts[0]->slug}}">
+                <a href="/post/{{$featured_posts[0]->slug}}">
                     <img src="/storage/{{$featured_posts[0]->image}}" class="slider-img-big"/>
                     <p class="post-title">{{$featured_posts[0]->title}}</p>
                 </a>
             </div>
             <div class="col-md-6 slider-div">
                 <div class="col-md-12 slider-div">
-                    <a href="/posts{{$featured_posts[1]->slug}}">
+                    <a href="/post/{{$featured_posts[1]->slug}}">
                         <img src="/storage/{{$featured_posts[1]->image}}" class="slider-img-small"/>
                         <p class="post-title">{{$featured_posts[1]->title}}</p>
                     </a>
                 </div>
                 <div class="col-md-12 slider-div">
-                    <a href="/posts/{{$featured_posts[2]->slug}}">
+                    <a href="/post/{{$featured_posts[2]->slug}}">
                         <img src="/storage/{{$featured_posts[2]->image}}" class="slider-img-small"/>
                         <p class="post-title">{{$featured_posts[2]->title}}</p>
                     </a>
@@ -43,9 +43,9 @@
                 </div>
                 </a>
                 @endforeach
-                <div>
-                    <p class="more-button"><a href="/posts"><u>More Posts</u></a></p>
-                </div>
+            </div>
+            <div>
+                <p class="more-button"><a href="/posts"><u>More Posts</u></a></p>
             </div>
         </div>
 

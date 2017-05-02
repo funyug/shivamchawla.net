@@ -11,11 +11,12 @@
             <div class='brand'>
                <a href="/">{{ Voyager::setting('site_name') }}</a>
             </div>
-            <ul class="pull-right navbar-ul">
+            {{--<ul class="pull-right navbar-ul">
                 <li><a href="#">News</a></li>
                 <li><a href="#">Guides</a></li>
                 <li><a href="#">Videos</a></li>
-            </ul>
+            </ul>--}}
+            {{ menu('Main Menu','menus.main_menu') }}
         </div>
     </nav>
     <br>
@@ -23,7 +24,7 @@
 <div class="container-outer">
 @yield('content')
 <div class="footer center">
-    <p>Copyright Dota2Experts. Dota 2 is a registered trademark of Valve Corporation.</p>
+    <p>Copyright Shivam Chawla</p>
 </div>
 </div>
 </body>
