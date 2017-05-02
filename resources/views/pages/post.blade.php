@@ -14,9 +14,8 @@
         {!! $post->body  !!}
     </div>
     <div class="share-buttons">
-        <button class="btn btn-primary">FShare</button>
-        <button class="btn btn-primary">Tweet</button>
-        <button class="btn btn-primary">GShare</button>
+        <div class="fb-share-button" data-href="{{url('/post/'.$post->slug)}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{url('/post/'.$post->slug)}}&amp;src=sdkpreparse">Share</a></div>
+        <a class="twitter-share-button" data-show-count="false">Tweet</a>
     </div>
     <div class="comments">
         <p>0 Comments</p>
