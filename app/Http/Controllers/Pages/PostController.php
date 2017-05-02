@@ -18,6 +18,7 @@ class PostController extends Controller
         if($post == null) {
             abort(404);
         }
-        return view('pages.post',compact('post'));
+        $title = $post->title;
+        return view('pages.post',compact('post','title'));
     }
 }

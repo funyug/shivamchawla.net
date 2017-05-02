@@ -14,6 +14,7 @@ class CategoryController extends Controller
             abort(404);
         }
         $posts = $category->posts()->paginate(16);
-        return view('pages.category',compact('category','posts'));
+        $title = $category->name;
+        return view('pages.category',compact('category','posts','title'));
     }
 }
