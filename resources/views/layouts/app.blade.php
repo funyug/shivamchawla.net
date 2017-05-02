@@ -11,11 +11,6 @@
             <div class='brand'>
                <a href="/">{{ Voyager::setting('site_name') }}</a>
             </div>
-            {{--<ul class="pull-right navbar-ul">
-                <li><a href="#">News</a></li>
-                <li><a href="#">Guides</a></li>
-                <li><a href="#">Videos</a></li>
-            </ul>--}}
             {{ menu('Main Menu','menus.main_menu') }}
         </div>
     </nav>
