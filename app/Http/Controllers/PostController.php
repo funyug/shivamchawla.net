@@ -14,6 +14,10 @@ class PostController extends Controller
     }
 
     public function show($slug) {
-        return view('pages.post');
+        $post = Post::where('slug',$slug)->first();
+        if($post == null) {
+            abort(404);
+        }
+        return view('pages.post',compact('post'));
     }
 }

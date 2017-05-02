@@ -110,6 +110,7 @@ body {
 }
 .article-content {
   font-size:18px;
+  text-align: left;
 }
 .share-buttons {
   padding-top:30px;
@@ -160,9 +161,11 @@ body {
   width: 33%;
   border-top: 2px solid dodgerblue;
 }
-a {
+a, a:hover,a:visited {
   color:white;
+  text-decoration: none;
 }
+
 .more-button {
   text-align: center;
 }

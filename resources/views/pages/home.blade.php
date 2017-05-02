@@ -27,10 +27,11 @@
         </div>
         @endif
         <div class="section">
-            <h1 class="center">Guides</h1>
+            <h1 class="center">Posts</h1>
             <hr class="divider-line" />
             <div class="posts clearfix">
                 @foreach($posts as $post)
+                <a href="/post/{{$post->slug}}">
                 <div class="col-md-6 post">
                     <div class="col-md-4 post-image">
                         <img src="/storage/{{$post->image}}">
@@ -40,9 +41,10 @@
                         <p class="post-excerpt">{{$post->excerpt}}</p>
                     </div>
                 </div>
+                </a>
                 @endforeach
                 <div>
-                    <p class="more-button"><a href="/posts"><u>More Guides</u></a></p>
+                    <p class="more-button"><a href="/posts"><u>More Posts</u></a></p>
                 </div>
             </div>
         </div>

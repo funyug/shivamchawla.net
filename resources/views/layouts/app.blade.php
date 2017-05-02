@@ -9,7 +9,7 @@
     <nav class='navbar-inner header'>
         <div class='container'>
             <div class='brand'>
-                Dota2Experts
+               <a href="/">{{ Voyager::setting('site_name') }}</a>
             </div>
             <ul class="pull-right navbar-ul">
                 <li><a href="#">News</a></li>
