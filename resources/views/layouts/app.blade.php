@@ -14,6 +14,7 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="/js/app.js"></script>
 <body>
 <div class='navbar navbar-fixed-top'>
     <nav class='navbar-inner header'>

@@ -17,7 +17,7 @@
         <div class="fb-share-button" data-href="{{url('/post/'.$post->slug)}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{url('/post/'.$post->slug)}}&amp;src=sdkpreparse">Share</a></div>
         <a class="twitter-share-button" data-show-count="false">Tweet</a>
     </div>
-    <div class="comments">
+    <div class="comments" ng-app="commentApp" ng-controller="comment_controller">
         <p>0 Comments</p>
         <div class="comments-div clearfix">
             <div class="single-comment clearfix">
@@ -34,8 +34,11 @@
                     <img src="http://dotageeks.com/wp-content/uploads/2015/06/Pugna-Dota-2-Wallpaper-31.jpg">
                 </div>
                 <div class="col-md-11 input-field">
-                    <textarea placeholder="Write a comment"></textarea>
-                    <button class="btn btn-primary btn-post-comment">Post Comment</button>
+                    <textarea ng-model="data.comment" placeholder="Write a comment"></textarea>
+                    <br>
+                    <input type="text" placeholder="Name" ng-model="data.name">
+                    <input type="email" placeholder="Email" ng-model="data.email">
+                    <button class="btn btn-primary btn-post-comment" ng-click="postComment()">Post Comment</button>
                 </div>
             </div>
         </div>
