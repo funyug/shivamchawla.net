@@ -43,7 +43,7 @@
             <div class="write-comment">
                 <p class="error" ng-repeat="error in errors">@{{ error }}</p>
                 <div class="col-md-1 avatar-image">
-
+                    <img src="http://gravatar.com/avatar/0000000000">
                 </div>
                 <div class="col-md-11 input-field">
                     <textarea ng-model="data.comment" placeholder="Write a comment"></textarea>
