@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Pages;
 
+use App\Models\Comment;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use TCG\Voyager\Models\Post;
@@ -19,6 +20,7 @@ class PostController extends Controller
             abort(404);
         }
         $title = $post->title;
-        return view('pages.post',compact('post','title'));
+        $comments = Comment::wherePostId($post->id)->get();
+        return view('pages.post',compact('post','title','comments'));
     }
 }
