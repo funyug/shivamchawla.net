@@ -7,13 +7,15 @@
         <div class="posts clearfix">
             @foreach($posts as $post)
                 <div class="col-md-6 post">
-                    <div class="col-md-4 post-image">
-                        <img src="/storage/{{$post->image}}">
-                    </div>
-                    <div class="col-md-8">
-                        <h1 class="post-title">{{$post->title}}</h1>
-                        <p class="post-excerpt">{{$post->excerpt}}</p>
-                    </div>
+                    <a href="/post/{{$post->slug}}">
+                        <div class="col-md-4 post-image">
+                            <img src="/storage/{{$post->image}}">
+                        </div>
+                        <div class="col-md-8">
+                            <h1 class="post-title">{{$post->title}}</h1>
+                            <p class="post-excerpt">{{$post->excerpt}}</p>
+                        </div>
+                    </a>
                 </div>
             @endforeach
             <div>
